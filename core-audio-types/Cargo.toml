@@ -20,6 +20,9 @@ libc = "0.2"
 default = ["link"]
 link = ["core-foundation-sys/link"]
 
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(CA_PREFER_FIXED_POINT)'] }
+
 [package.metadata.docs.rs]
 no-default-features = true
 default-target = "x86_64-apple-darwin"

@@ -28,6 +28,8 @@ core-video = { version = "0.4", path = "../core-video", features = ["objc"] }
 [features]
 default = ["link"]
 link = ["core-foundation/link", "core-graphics2/link", "core-media/link"]
+audio = []
+video = []
 
 [[example]]
 name = "screen_capture"
